@@ -1,0 +1,20 @@
+{
+  "allFiles": [
+    {
+      "file": "/storage/emulated/0/sakura/gradle.properties",
+      "selection": {
+        "end": {
+          "column": 32,
+          "index": 1501,
+          "line": 26
+        },
+        "start": {
+          "column": 32,
+          "index": 1501,
+          "line": 26
+        }
+      }
+    }
+  ],
+  "selectedFile": "/storage/emulated/0/sakura/gradle.properties"
+}
