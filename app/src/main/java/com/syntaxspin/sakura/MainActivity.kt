@@ -17,18 +17,21 @@ import androidx.compose.foundation.*
 import androidx.compose.ui.res.*
 import androidx.compose.foundation.shape.*
 import androidx.compose.material3.*
+import androidx.compose.ui.layout.*
 
-//TextField
-
+//Local Context
+import androidx.compose.ui.platform.LocalContext
 //Units & Draws
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
 //LazyComponents
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 //icons 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Search
+import androidx.compose.material.icons.filled.Home
 
 //Theme
 import com.syntaxspin.sakura.ui.theme.ThemeSakura
@@ -42,6 +45,10 @@ class MainActivity : ComponentActivity() {
                         Column{ Items()
                          dividerText("SearchBar (TextField)")
                          searchBar()
+                         dividerText("Contact Lists")
+                         Listy()
+                         dividerText(" Compose Card ")
+                         PartyCard()
                          }
                       }
                                                              }
@@ -73,6 +80,7 @@ fun Items(){
                       modifier = Modifier 
                       .size(50.dp)
                       .clip(CircleShape)
+                      
                      )
               
           Spacer(modifier = Modifier .width(8.dp) .padding(top = 8.dp))
@@ -118,18 +126,56 @@ onValueChange = {},
 
 
 }
-
-
-/* Will Learn it Later
 @Composable
-fun Listify(itm : List<itm>){
-LazyColumn{
-           items(itm){  itm ->
-                      Items(itm)
-                      }
-           }
+fun Listy(){
+LazyRow(modifier = Modifier.padding(8.dp)) {
+items(6){item ->
+Row(horizontalArrangement = Arrangement.spacedBy(16.dp)){
+storyItem("Jensen Ackles" ,R.drawable.jea)
+storyItem("Jenna Ortega" ,R.drawable.jo)
+storyItem("Aquiles Trindade" ,R.drawable.at)
+storyItem("Felipe Teixeira" ,R.drawable.ft)
+storyItem("Rohit Kushvaha" ,R.drawable.rk)
+storyItem("Vivek" ,R.drawable.vv)
+}
+}
+}
+}
+@Composable
+fun storyItem(text:String ,icon:Int ){
+              Column(horizontalAlignment= Alignment.CenterHorizontally , modifier = Modifier.padding(8.dp)){
+                    Image(
+                      /* painter = painterResource(
+                       LocalContext.current.resources.getIdentifier(icon, "drawable", LocalContext.current.packageName))*/
+                      painter = painterResource(id = icon),
+                        contentDescription = text ,
+                        contentScale = ContentScale.Crop ,
+                        modifier = Modifier
+                        .size(88.dp)
+                        .clip(CircleShape)
+                        
+              )
+              Text(
+              text= text ,
+              style = MaterialTheme.typography.bodyMedium ,
+              modifier = Modifier 
+              .paddingFromBaseline(top = 24.dp , bottom = 8.dp)
+              
+              )
+                    }
+}
+@Composable
+fun PartyCard(){
+Card(
+modifier = Modifier 
+.fillMaxWidth()
+.padding(8.dp)
+.height(100.dp)
+){
 
-}  */        
+}
+
+}
   }
 
 

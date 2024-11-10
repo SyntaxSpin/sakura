@@ -4,29 +4,14 @@
       "file": "/storage/emulated/0/sakura/app/src/main/java/com/syntaxspin/sakura/MainActivity.kt",
       "selection": {
         "end": {
-          "column": 19,
-          "index": 2634,
-          "line": 90
+          "column": 51,
+          "index": 1722,
+          "line": 47
         },
         "start": {
-          "column": 19,
-          "index": 2634,
-          "line": 90
-        }
-      }
-    },
-    {
-      "file": "/storage/emulated/0/sakura/app/src/main/java/com/syntaxspin/sakura/ui/theme/Type.kt",
-      "selection": {
-        "end": {
-          "column": 31,
-          "index": 507,
-          "line": 12
-        },
-        "start": {
-          "column": 31,
-          "index": 507,
-          "line": 12
+          "column": 51,
+          "index": 1722,
+          "line": 47
         }
       }
     }
