@@ -14,7 +14,52 @@
           "line": 47
         }
       }
+    },
+    {
+      "file": "/storage/emulated/0/sakura/app/build.gradle.kts",
+      "selection": {
+        "end": {
+          "column": 13,
+          "index": 615,
+          "line": 29
+        },
+        "start": {
+          "column": 13,
+          "index": 615,
+          "line": 29
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/sakura/build.gradle.kts",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        },
+        "start": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/sakura/.github/workflows/android.yml",
+      "selection": {
+        "end": {
+          "column": 43,
+          "index": 1333,
+          "line": 58
+        },
+        "start": {
+          "column": 43,
+          "index": 1333,
+          "line": 58
+        }
+      }
     }
   ],
-  "selectedFile": "/storage/emulated/0/sakura/app/src/main/java/com/syntaxspin/sakura/MainActivity.kt"
+  "selectedFile": "/storage/emulated/0/sakura/.github/workflows/android.yml"
 }
