@@ -129,7 +129,7 @@ onValueChange = {},
 @Composable
 fun Listy(){
 LazyRow(modifier = Modifier.padding(8.dp)) {
-items(6){item ->
+items(1){item ->
 Row(horizontalArrangement = Arrangement.spacedBy(16.dp)){
 storyItem("Jensen Ackles" ,R.drawable.jea)
 storyItem("Jenna Ortega" ,R.drawable.jo)

@@ -4,14 +4,14 @@
       "file": "/storage/emulated/0/sakura/app/src/main/java/com/syntaxspin/sakura/MainActivity.kt",
       "selection": {
         "end": {
-          "column": 51,
-          "index": 1722,
-          "line": 47
+          "column": 7,
+          "index": 3761,
+          "line": 131
         },
         "start": {
-          "column": 51,
-          "index": 1722,
-          "line": 47
+          "column": 7,
+          "index": 3761,
+          "line": 131
         }
       }
     },
@@ -19,14 +19,14 @@
       "file": "/storage/emulated/0/sakura/app/build.gradle.kts",
       "selection": {
         "end": {
-          "column": 13,
-          "index": 615,
-          "line": 29
+          "column": 35,
+          "index": 653,
+          "line": 30
         },
         "start": {
-          "column": 13,
-          "index": 615,
-          "line": 29
+          "column": 35,
+          "index": 653,
+          "line": 30
         }
       }
     },
@@ -76,5 +76,5 @@
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/sakura/.github/workflows/android.yml"
+  "selectedFile": "/storage/emulated/0/sakura/app/build.gradle.kts"
 }
