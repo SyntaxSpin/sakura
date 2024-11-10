@@ -58,8 +58,8 @@ jobs:
           name: app-debug
           path: app/build/outputs/apk/debug/app-debug.apk
           
-  send_release_apk:
-    name: Send Release APK
+  send_debug_apk:
+    name: Send Debug APK
     runs-on: ubuntu-latest
     needs: build_debug_apk
     
