@@ -18,12 +18,16 @@ import androidx.compose.ui.res.*
 import androidx.compose.foundation.shape.*
 import androidx.compose.material3.*
 import androidx.compose.ui.layout.*
+import androidx.compose.ui.text.style.*
+import androidx.compose.foundation.clickable
+
 
 //Local Context
 import androidx.compose.ui.platform.LocalContext
 //Units & Draws
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 //LazyComponents
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
@@ -32,7 +36,10 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Home
-
+//Kotlin Values Functions
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
 //Theme
 import com.syntaxspin.sakura.ui.theme.ThemeSakura
 
@@ -42,13 +49,17 @@ class MainActivity : ComponentActivity() {
        setContent{
             ThemeSakura{
                  Surface( modifier = Modifier.fillMaxSize()){
-                        Column{ Items()
+                        Column(modifier = Modifier.verticalScroll(rememberScrollState())){ Items()
                          dividerText("SearchBar (TextField)")
                          searchBar()
-                         dividerText("Contact Lists")
+                         dividerText("Contacts List")
                          Listy()
-                         dividerText(" Compose Card ")
+                         dividerText("Compose Card")
                          PartyCard()
+                         dividerText("Material Button")
+                         mtrlButton("Click Me")
+                         dividerText("TextField")
+                         textfield()
                          }
                       }
                                                              }
@@ -166,16 +177,56 @@ fun storyItem(text:String ,icon:Int ){
 }
 @Composable
 fun PartyCard(){
-Card(
-modifier = Modifier 
-.fillMaxWidth()
-.padding(8.dp)
-.height(100.dp)
-){
+         Card(
+         modifier = Modifier 
+         .fillMaxWidth()
+         .padding(8.dp)
+         .height(150.dp)
+              ){
+                 Box{
+                    Image(
+                 painterResource(R.drawable.mtrl),
+                 contentDescription = null,
+                 contentScale = ContentScale.Crop,
+                 modifier = Modifier 
+                 .fillMaxWidth()
+                 
+                      )
+                       Text(
+                            text = "Hello CardView",
+                            fontSize = 50.sp,
+                            lineHeight = 136.sp,
+                            textAlign = TextAlign.Center,
+                            modifier = Modifier
+                            .padding(8.dp)
+                            )
+                            
+                                    
+                       
+                    }
+               }
 
 }
-
+@Composable
+fun mtrlButton(txt:String){
+               Button( modifier = Modifier.padding(8.dp), onClick = {/*DoSomething*/}){
+                   Text(text = txt)
+                             }
 }
+@Composable 
+fun textfield(){
+/*var textFieldText by remember {
+  murableStateOf("")
+}*/
+             TextField(
+             value = "",
+             label = { Name("Hello") },
+             onValueChange = {/*newValue ->
+    textFieldText = newValue*/},
+             modifier = Modifier
+             .padding(8.dp)
+             ) 
+               }
   }
 
 
