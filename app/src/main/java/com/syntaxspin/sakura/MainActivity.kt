@@ -24,6 +24,12 @@ import androidx.compose.foundation.clickable
 
 //Local Context
 import androidx.compose.ui.platform.LocalContext
+//Logics 
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+
 //Units & Draws
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
@@ -60,6 +66,8 @@ class MainActivity : ComponentActivity() {
                          mtrlButton("Click Me")
                          dividerText("TextField")
                          textfield()
+                         dividerText("Material Switch")
+                         Switchify()
                          }
                       }
                                                              }
@@ -227,6 +235,16 @@ fun textfield(){
              .padding(8.dp)
              ) 
                }
+@Composable
+fun Switchify (){
+var checked by remember { mutableStateOf(true) }
+Switch( //text ="Switch ON/OFF",
+         checked = checked ,
+         onCheckedChange = {
+            checked = it
+         },
+         modifier = Modifier.padding(16.dp))
+                }             
   }
 
 
