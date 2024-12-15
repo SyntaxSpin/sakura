@@ -2,15 +2,14 @@
 plugins {
     id("com.android.application")
     id("kotlin-android")
-    id("org.jetbrains.kotlin.plugin.compose")
 }
 
 android {
-    namespace = "com.syntaxspin.sakura"
+    namespace = "com.syntaxspin.nozomi"
     compileSdk = 34
     
     defaultConfig {
-        applicationId = "com.syntaxspin.sakura"
+        applicationId = "com.syntaxspin.nozomi"
         minSdk = 21
         targetSdk = 34
         versionCode = 1
@@ -27,8 +26,8 @@ android {
     }
 
     buildTypes {
-        debug {
-            isMinifyEnabled = false
+        release {
+            isMinifyEnabled = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }

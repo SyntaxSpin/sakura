@@ -14,6 +14,6 @@ dependencyResolutionManagement {
   }
 }
 
-rootProject.name = "Sakura"
+rootProject.name = " Nozomi"
 
 include(":app")
