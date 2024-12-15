@@ -1,17 +1,17 @@
 {
   "allFiles": [
     {
-      "file": "/storage/emulated/0/Nozomi/app/src/main/java/com/syntaxspin/nozomi/ui/theme/NozomiTheme.kt",
+      "file": "/storage/emulated/0/Nozomi/app/src/main/java/com/syntaxspin/nozomi/ui/theme/Theme.kt",
       "selection": {
         "end": {
-          "column": 0,
-          "index": 0,
-          "line": 0
+          "column": 59,
+          "index": 3589,
+          "line": 91
         },
         "start": {
-          "column": 0,
-          "index": 0,
-          "line": 0
+          "column": 59,
+          "index": 3589,
+          "line": 91
         }
       }
     },
@@ -19,17 +19,32 @@
       "file": "/storage/emulated/0/Nozomi/app/src/main/java/com/syntaxspin/nozomi/MainActivity.kt",
       "selection": {
         "end": {
-          "column": 49,
-          "index": 505,
+          "column": 44,
+          "index": 500,
           "line": 12
         },
         "start": {
-          "column": 49,
-          "index": 505,
+          "column": 44,
+          "index": 500,
           "line": 12
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/Nozomi/app/src/main/java/com/syntaxspin/nozomi/ui/theme/Type.kt",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        },
+        "start": {
+          "column": 0,
+          "index": 0,
+          "line": 0
         }
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/Nozomi/app/src/main/java/com/syntaxspin/nozomi/ui/theme/NozomiTheme.kt"
+  "selectedFile": "/storage/emulated/0/Nozomi/app/src/main/java/com/syntaxspin/nozomi/ui/theme/Type.kt"
 }
