@@ -19,14 +19,14 @@
       "file": "/storage/emulated/0/Nozomi/app/src/main/java/com/syntaxspin/nozomi/MainActivity.kt",
       "selection": {
         "end": {
-          "column": 44,
-          "index": 500,
-          "line": 12
+          "column": 10,
+          "index": 1205,
+          "line": 38
         },
         "start": {
-          "column": 44,
-          "index": 500,
-          "line": 12
+          "column": 10,
+          "index": 1205,
+          "line": 38
         }
       }
     },
@@ -44,7 +44,22 @@
           "line": 0
         }
       }
+    },
+    {
+      "file": "/storage/emulated/0/Nozomi/app/src/main/java/com/syntaxspin/nozomi/ui/theme/Color.kt",
+      "selection": {
+        "end": {
+          "column": 38,
+          "index": 38,
+          "line": 0
+        },
+        "start": {
+          "column": 38,
+          "index": 38,
+          "line": 0
+        }
+      }
     }
   ],
-  "selectedFile": "/storage/emulated/0/Nozomi/app/src/main/java/com/syntaxspin/nozomi/ui/theme/Type.kt"
+  "selectedFile": "/storage/emulated/0/Nozomi/app/src/main/java/com/syntaxspin/nozomi/MainActivity.kt"
 }
