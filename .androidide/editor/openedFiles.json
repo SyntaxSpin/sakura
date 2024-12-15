@@ -1,0 +1,35 @@
+{
+  "allFiles": [
+    {
+      "file": "/storage/emulated/0/Nozomi/build.gradle.kts",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        },
+        "start": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/Nozomi/app/build.gradle.kts",
+      "selection": {
+        "end": {
+          "column": 45,
+          "index": 855,
+          "line": 39
+        },
+        "start": {
+          "column": 45,
+          "index": 855,
+          "line": 39
+        }
+      }
+    }
+  ],
+  "selectedFile": "/storage/emulated/0/Nozomi/app/build.gradle.kts"
+}
