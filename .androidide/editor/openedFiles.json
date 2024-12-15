@@ -16,20 +16,20 @@
       }
     },
     {
-      "file": "/storage/emulated/0/Nozomi/app/build.gradle.kts",
+      "file": "/storage/emulated/0/Nozomi/gradle.properties",
       "selection": {
         "end": {
-          "column": 4,
-          "index": 74,
-          "line": 4
+          "column": 27,
+          "index": 458,
+          "line": 8
         },
         "start": {
-          "column": 4,
-          "index": 74,
-          "line": 4
+          "column": 27,
+          "index": 458,
+          "line": 8
         }
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/Nozomi/app/build.gradle.kts"
+  "selectedFile": "/storage/emulated/0/Nozomi/gradle.properties"
 }
