@@ -1,7 +1,7 @@
 {
   "allFiles": [
     {
-      "file": "/storage/emulated/0/Nozomi/build.gradle.kts",
+      "file": "/storage/emulated/0/Nozomi/app/src/main/java/com/syntaxspin/nozomi/ui/theme/NozomiTheme.kt",
       "selection": {
         "end": {
           "column": 0,
@@ -16,20 +16,20 @@
       }
     },
     {
-      "file": "/storage/emulated/0/Nozomi/gradle.properties",
+      "file": "/storage/emulated/0/Nozomi/app/src/main/java/com/syntaxspin/nozomi/MainActivity.kt",
       "selection": {
         "end": {
-          "column": 27,
-          "index": 458,
-          "line": 8
+          "column": 49,
+          "index": 505,
+          "line": 12
         },
         "start": {
-          "column": 27,
-          "index": 458,
-          "line": 8
+          "column": 49,
+          "index": 505,
+          "line": 12
         }
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/Nozomi/gradle.properties"
+  "selectedFile": "/storage/emulated/0/Nozomi/app/src/main/java/com/syntaxspin/nozomi/ui/theme/NozomiTheme.kt"
 }
