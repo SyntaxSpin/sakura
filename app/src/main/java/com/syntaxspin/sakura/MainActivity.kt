@@ -249,9 +249,10 @@ Switch( //text ="Switch ON/OFF",
                 }  
 @Composable
 fun sliderSyntax(){
+        var sliderPosition by remember { mutableFloatStateOf(0f) }
         Slider(
-            value = 50.0F,
-            onValueChange = {},
+            value =sliderPosition ,
+            onValueChange = {sliderPosition = it},
             modifier = Modifier.padding(18.dp)
         )
 }                           
