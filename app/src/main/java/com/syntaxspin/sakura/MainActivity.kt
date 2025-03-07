@@ -68,6 +68,8 @@ class MainActivity : ComponentActivity() {
                          textfield()
                          dividerText("Material Switch")
                          Switchify()
+                         dividerText("Slider")
+                         sliderSyntax()
                          }
                       }
                                                              }
@@ -104,7 +106,7 @@ fun Items(){
               
           Spacer(modifier = Modifier .width(8.dp) .padding(top = 8.dp))
           Column{
-           Name("ScriptWrap")
+           Name("SyntaxSpin")
            Desc("Learning Compose from the Master Of Compose Aquiles Trindade")
            
                 }
@@ -244,7 +246,14 @@ Switch( //text ="Switch ON/OFF",
             checked = it
          },
          modifier = Modifier.padding(16.dp))
-                }             
+                }  
+@Composable
+fun sliderSyntax(){
+        Slider(
+            value = sliderPosition,
+            onValueChange = { sliderPosition = it }
+        )
+}                           
   }
 
 
