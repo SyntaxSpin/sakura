@@ -250,7 +250,7 @@ Switch( //text ="Switch ON/OFF",
 @Composable
 fun sliderSyntax(){
         Slider(
-            value = sliderPosition,
+            value = 20,
             onValueChange = { sliderPosition = it }
         )
 }                           
