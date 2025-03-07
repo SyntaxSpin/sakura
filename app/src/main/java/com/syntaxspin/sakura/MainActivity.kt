@@ -251,7 +251,7 @@ Switch( //text ="Switch ON/OFF",
 fun sliderSyntax(){
         Slider(
             value = 20.0F,
-            onValueChange = { sliderPosition = it }
+            onValueChange = { 20.0F = it }
         )
 }                           
   }
