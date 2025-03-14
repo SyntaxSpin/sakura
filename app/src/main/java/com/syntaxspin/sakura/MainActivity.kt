@@ -71,7 +71,8 @@ class MainActivity : ComponentActivity() {
                          Switchify()
                          dividerText("Slider")
                          sliderSyntax()
-                         }
+                         dividerText("DropDownMenu")
+                         initDropDown()                         }
                       }
                                                              }
                   }
@@ -256,6 +257,29 @@ fun sliderSyntax(){
             onValueChange = {sliderPosition = it},
             modifier = Modifier.padding(18.dp)
         )
+}
+@Composable 
+fun initDropDown(){
+        var expand by remember {mutableStateOf(false)}
+        Button (
+        text = "Click Me",
+        onClick = {expand = !expand}
+        modifier = Modifier.padding(8.dp)
+            )
+        DropDownMenu(
+        expand = expand,
+        shape = MaterialTheme.shapes.medium,
+        onDismissRequest={ expand = false }
+        DropDownMenuItem(
+        text = "SyntaxSpin",
+        onClick{expand = false}
+        )
+        DropDownMenuItem(
+        text = "Jetpack Compose",
+        onClick{expand = false}
+        )
+        )    
+    
 }                           
   }
 
