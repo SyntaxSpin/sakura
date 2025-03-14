@@ -21,7 +21,7 @@ import androidx.compose.ui.layout.*
 import androidx.compose.ui.text.style.*
 import androidx.compose.foundation.clickable
 import androidx.compose.runtime.mutableFloatStateOf
-
+ import androidx.compose.material3.*
 
 //Local Context
 import androidx.compose.ui.platform.LocalContext
@@ -262,7 +262,7 @@ fun sliderSyntax(){
 fun initDropDown(){
         var expand by remember {mutableStateOf(false)}
         Button (
-        text = "Click Me",
+        Text("Click Me"),
         onClick = {expand = !expand}
         modifier = Modifier.padding(8.dp)
             )
@@ -271,11 +271,11 @@ fun initDropDown(){
         shape = MaterialTheme.shapes.medium,
         onDismissRequest={ expand = false }
         DropDownMenuItem(
-        text = "SyntaxSpin",
+        Text("SyntaxSpin"),
         onClick{expand = false}
         )
         DropDownMenuItem(
-        text = "Jetpack Compose",
+        Text("Jetpack Compose"),
         onClick{expand = false}
         )
         )    
